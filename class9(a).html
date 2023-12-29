@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            background-color: lightgreen;
+            display: grid;
+            grid-template-columns:repeat(auto-fill,minmax(100px,auto));
+            border: 1px solid black;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .item
+        {
+            background-color:rgb(185, 211, 185) ;
+            border: 2px solid red;
+            height: 100px;
+            margin: 2px;
+        }
+        #item1
+        {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: rgb(182, 146, 217);
+        }
+        .nested
+        {
+            background-color: aquamarine;
+            border: 1px solid rgb(52, 7, 201);
+            text-align: center;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item" id="item1">
+            <div class="nested">nesting daba 1</div>
+            <div class="nested">nesting daba 2</div>
+            <div class="nested">nesting daba 3</div>
+        </div>
+        <div class="item">Dabba 2</div>
+        <div class="item">Dabba 3</div>
+        <div class="item">Dabba 4</div>
+        <div class="item">Dabba 5</div>
+        <div class="item">Dabba 6</div>
+        <div class="item">Dabba 7</div>
+        <div class="item">Dabba 8</div>
+        <div class="item">Dabba 9</div>
+        <div class="item">Dabba 10</div>
+        <div class="item">Dabba 11</div>
+    </div>
+</body>
+</html>

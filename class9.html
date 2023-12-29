@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container
+        {
+            display: grid;
+            background-color: lightcyan;
+            height: 600px;
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns:  auto auto auto; */
+            /* this will create a responsive grid  */
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            grid-gap: 20px;
+            grid-auto-columns: minmax(100px,auto);
+            grid-auto-rows: minmax(50px,auto);
+            column-gap: 5;
+            row-gap: 10px;
+        }
+        .item
+        {
+            background-color: rgb(113, 89, 123);
+            color: aliceblue;
+            border: 1px solid red;
+            /* margin: 2px; */
+            text-align: center;
+            /* height: 150px; */
+        }
+        #item1
+        { 
+            /* for giving only more area to any element along col*/
+            grid-column-start: 1;
+            grid-column-end: 3; 
+            /* for giving only more area to any element along rows
+            grid-row-start: 2;
+            grid-row-end: 3;
+            ; */
+           
+            
+        }
+        #item4
+        { 
+            /* for giving only more area to any element along col*/
+            grid-column-start: 2;
+            grid-column-end: 4; 
+            /* for giving only more area to any element along rows
+            grid-row-start: 2;
+            grid-row-end: 3;
+            ; */
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- tip to create class or id with content inside along incresing numbering is  -->
+        <!-- div.or#(name of the class or id){content $}*no of times like -->
+        <!-- div.items{item $}*5 -->
+        <div class="item" id="item1">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item" id="item4">item 4</div>
+        <div class="item">item 5</div>
+    </div>
+</body>
+</html>

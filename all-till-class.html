@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-6</title>
+    <style>
+        legend
+        {
+            color: azure;
+            letter-spacing: 2px;
+            text-align: center;
+            font-weight: bold;
+            font-family: cursive;
+            text-decoration: underline;
+            text-decoration-color: rgb(255, 0, 200);
+            text-decoration-thickness: 2px;
+            border: 2px solid rgb(128, 0, 107);
+            border-radius: 10px;
+            font-size: large;
+            background-color: black;
+        }
+        a
+        {
+            display: block;
+            text-align: center;
+            padding: 3px;
+        }
+
+        img
+        {
+            width: 770px;
+            /* left: 5.4cm; */
+            margin-left: 5.4cm;
+            position: relative;
+        }
+        #mountains
+        {
+            text-align: center;
+            font-weight: bold;
+            /* position: absolute; */
+            
+        }
+        figcaption
+        {
+            font-family:cursive;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        fieldset
+        {
+            background-color: rgb(235, 233, 126);
+        }
+        table,th,tr,td
+        {
+            border: 1px solid red;
+            border-collapse: collapse;
+            padding: 5px;
+            /* width: 100%; */
+            text-align: center;
+        }
+        #main-div
+        {
+            background-color: rgb(154, 193, 227);
+            padding: 10px;
+            border: 1px solid red;
+            position: relative;
+        }
+        .div1
+        {
+            /* position:fixed; */
+            position: absolute;
+            top: 0;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid rgb(3, 46, 175);
+            right: 0%;
+            background-color: brown;
+            color: azure;
+            z-index: 1;
+        }
+        .div2
+        {
+            position: sticky;
+            top: 1;
+            padding: 5px;
+            margin-top: 5px;
+            border: 2px solid rgb(3, 46, 175);
+            top: 0%;
+            background-color: rgb(89, 36, 162);
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Paragraph Tag-Block level element</legend>   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ratione.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit.</p>
+    </fieldset>
+    <fieldset>
+        <legend>Div Tag-Block Leve Element</legend>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, harum.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sint? Voluptatibus, corporis. Quae magnam harum vero ipsam omnis esse molestias?
+        </div>
+         <!-- (BLOCK ELEMENT)Div,P tag starts from the new line-->
+    </fieldset>
+    <fieldset>
+        <legend>
+            Span Tag-Inline Element
+        </legend>
+        <span>SPAN 1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, praesentium!</span>
+        <span>SPAN 2-Lorem ipsum dolor sit amet.</span>
+        <!-- (INLINE ELEMENT)span starts from the same line it does not starts the new line -->
+    </fieldset>
+    <fieldset>
+        <legend>
+            Anchor Tag
+            <!-- It is used to link the different links in the web page -->
+        </legend>
+        <a href="facebook.com" target="_blank">Go To Facebook</a>
+        <a href="google.com" target="_blank">Go To Google</a>
+        <a href="instagram.com" target="_blank">Go To Instagram</a>
+        <a href="w3schools.com" target="_blank">Go To W3Schools</a>
+        <a href="geeksforgeeks.com" target="_blank">Go To GFG</a>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Image Tag
+            <!-- This is used to add the images -->
+        </legend>
+        <img src="https://wallpaperaccess.com/full/1376495.jpg" alt="Mountains">
+        <p id="mountains">Kashmir Mountains</p>
+       <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUhKpiLt7XuG1JZAMxQbMAX5n3M3yttg_0-tf139TVJssFl_85fEfus9s0ta6M8FvvyY&usqp=CAU" alt="Chinar Tree">
+        <figcaption>Chinar Trees are mainly found n Kashmir.They are big in size having wide branches and a very big steam.Its leaves are like the hands of Human Beings.</figcaption></figure> 
+    </fieldset> 
+    <fieldset>
+        <legend>
+            Iframe Tag
+                <!-- Iframe tag specifies an inline frame. An inline frame is used to embed another document within the current HTM document  -->
+        </legend>
+        <iframe width="400px" height="500px" src="https://www.youtube.com/embed/QRQeFuduco8" title="𝐘𝐞𝐡 𝐆𝐮𝐦 𝐊𝐲𝐚 𝐃𝐢𝐥 𝐊𝐢 𝐀𝐚𝐝𝐚𝐭 𝐇𝐚𝐢 ? 𝐍𝐚𝐡𝐢 𝐓𝐨...𝐊𝐢𝐬𝐢 𝐒𝐞 𝐊𝐮𝐜𝐡 𝐒𝐡𝐢𝐤𝐚𝐲𝐚𝐭 𝐇𝐚𝐢 ? 𝐍𝐚𝐡𝐢 𝐓𝐨... 𝐉𝐨𝐮𝐧 𝐄𝐥𝐢𝐚" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="400" height="500" src="https://www.youtube.com/embed/tBpretSDW0Y" title="wo jo tamel hone wali thi lag gyi aag uss imaarat me by sahab jaun Elia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="400" height="500" src="https://www.youtube.com/embed/gMJi5RlBkVw" title="جون ایلیا کی داستاں رو پڑ گئے سب 😭🙏" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="400" height="500" src="https://www.youtube.com/embed/KHDCJ8WOpwA" title="Lag Gai Aag 🔥| Jaun Elia | Sad Poetry Status #shorts #status" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="400" height="500" src="https://www.youtube.com/embed/IOgIGlldrQs" title="Zinda Hoon Mn 💔 | Jaun Elia | Sad Poetry Status #shorts #status" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="400" height="500" src="https://www.youtube.com/embed/OJ_DR6R-Cd4" title="Jaun Elia&#39;s Best Poetry Line&#39;s Ever | Jaun Elia Poetry Status" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <figcaption>Joun Alia Sahab</figcaption>
+    </fieldset>
+    <fieldset>
+        <legend>Text Formatting</legend>
+        <p>PARA1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam?</p>
+        <p>PARA2-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, vel?</p>
+        <span>Span1-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, consequuntur?</span>
+        <span>Span2-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, consequuntur?</span>
+        <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, provident.</i>
+        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita provident pariatur qui a ullam iure libero corrupti aut optio excepturi.</strong>
+        <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, exercitationem. Dolorem tenetur doloremque fuga et!</b>
+        <em>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cum.
+        </em>
+        <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, asperiores!</small>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. <em>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, odit?
+            </em> 
+            Delectus animi quos ab maiores itaque, a aliquam earum beatae ut nostrum.
+        </p>
+        <strong>
+            Lorem, ipsum dolor sit amet consectetur 
+            <u><i>Lorem ipsum dolor sit amet.</i> </u>adipisicing elit. Aliquid, impedit!
+        </strong>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <del>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, rem.
+            </del> Porro harum sapiente laborum inventore animi id quod ipsam aut architecto placeat?
+        </p>
+        <strong>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, possimus aliquid! <mark>Lorem ipsum dolor sit amet.</mark>  Harum accusamus quos odio delectus nostrum ab quo illo.
+        </strong>
+        <em>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            <mark> <sub>Aarif Farooq Bhat</sub>
+            <sup>2019-310-001</sup> </mark>Rerum ipsa nihil libero voluptatem dolorem eius minima assumenda pariatur architecto necessitatibus.
+        </em>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nihil.
+            <strong>Lorem ipsum dolor sit amet.</strong>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <strong>Video,audio tag</strong>
+        <br>
+        <video src="./_“@a_lightening_star07…”_.mp4" controls></video>
+        <audio src="./_“@a_lightening_star07…”_.mp4" type="audio" ></audio>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Lists
+        </legend>
+        <b>Unordered List</b>
+        <ul>
+            <li>BMW</li>
+            <li>TATA</li>
+            <li>ELON</li>
+            <li>RANGE</li>
+        </ul>
+        <b>Ordered List</b>
+        <ol>
+            <li>BMW</li>
+            <li>TATA</li>
+            <li>ELON</li>
+            <li>RANGE</li>
+        </ol>
+        <b>Unordered List</b>
+        <ul type="Circle">
+            <li>BMW</li>
+            <li>TATA</li>
+            <li>ELON</li>
+            <li>RANGE</li>
+        </ul>
+        <b>Ordered List With Type Circle</b>
+        <ol type="A">
+            <li>BMW</li>
+            <li>TATA</li>
+            <li>ELON</li>
+            <li>RANGE</li>
+        </ol>
+        <b>Ordered List With Type Roman</b>
+        <ol type="I">
+            <li>BMW</li>
+            <li>TATA</li>
+            <li>ELON</li>
+            <li>RANGE</li>
+        </ol>
+        <b>Ordered List With Type Romaan Numerical</b>
+        <ol type="i" >
+            <li>BMW</li>
+            <li>TATA</li>
+            <li>ELON</li>
+            <li>RANGE</li>
+        </ol>
+        <b>Ordered List With Type Romaan Numerical</b>
+        <ol>
+            <li>BMW</li>
+            <li>TATA</li>
+            <li>ELON</li>
+            <li>RANGE</li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Table
+        </legend>
+    
+    <table>
+        <tr>
+            <th width="33%">NAME</th>
+            <th width="33%">ID</th>
+            <th width="34">COURSE</th>
+        <tr>
+            <td>Aarif</td>
+            <td>001</td>
+            <td>Cse</td>
+        </tr>
+        <tr>
+            <td>Fiza</td>
+            <td>002</td>
+            <td>Cse</td>
+        </tr>
+        <tr>
+            <td>Iram</td>
+            <td>003</td>
+            <td>Cse</td>
+        </tr>
+    </table>
+</fieldset>
+<fieldset>
+    <legend>Setions</legend>
+        <div id="main-div">
+            <div class="div1">Static Section</div>
+            <div class="div2">Sticky Section</div>
+            <div class="div3">Fixed Section</div>
+            <div class="div4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repellat cupiditate vero ea vitae! Nulla quasi esse voluptate incidunt labore doloremque ad dolorum non ipsa numquam eum, fuga, ut quo?</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione ducimus cum consequuntur deserunt laudantium exercitationem eius magnam unde eveniet, nobis quae deleniti rerum. Quae ea amet nobis suscipit animi provident sunt, unde aliquid aspernatur corrupti quas delectus placeat recusandae eveniet maxime? Nobis quis officia libero nihil recusandae delectus laborum dolor, quibusdam quisquam, itaque ullam voluptas. Tempora perspiciatis sed atque, repellendus consequuntur suscipit consectetur facere non minus. Minima eaque iure veritatis sit et eius? Impedit id minima voluptatem praesentium excepturi fuga cumque non ipsum recusandae explicabo? Eum aspernatur quas aliquam aliquid omnis quod voluptatum ad, cum sunt nihil ea placeat soluta labore necessitatibus odio architecto vitae non! Sequi nobis magni harum quas quaerat! Quam quasi ratione, cupiditate accusamus repellat ipsum expedita error veniam sequi eveniet enim at magnam neque voluptatibus hic consectetur nemo perspiciatis autem cum explicabo maxime voluptates. Doloremque asperiores mollitia dolore at cum dolorem omnis? At consectetur omnis, ea aspernatur eum soluta id odit accusantium hic dolor doloribus, voluptas quae sed ex perferendis quibusdam repellendus, sequi optio vitae fugiat ratione? Odio vero quam libero officiis. Quae temporibus laudantium beatae delectus fuga accusamus nisi maiores quos quam eveniet fugit reiciendis asperiores, ab perferendis dolore dolorem, aut nihil similique aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maxime illum tempora facere dolore. Autem, nobis dolore impedit ducimus quibusdam consequuntur facilis perferendis debitis fugit odit voluptas vero aliquam tempore quae provident neque quasi nisi iusto explicabo deleniti accusantium corporis laudantium aperiam? Cumque minus quasi fugit fuga distinctio maiores velit sit autem magnam excepturi, numquam dolore voluptate voluptates corrupti quisquam asperiores repudiandae? Odit earum corporis eum voluptas consequuntur, eaque pariatur fuga. Vel suscipit consequatur architecto, voluptas maxime doloribus ex, impedit optio incidunt voluptatum voluptate excepturi dolorem deleniti, ratione aliquam exercitationem aspernatur reprehenderit quisquam eius? Consectetur porro inventore minus aperiam, ipsam quis quae corrupti amet ad maiores magnam at reprehenderit enim tenetur saepe. Repellat explicabo reprehenderit, in enim dignissimos obcaecati cumque, labore quasi mollitia velit esse sapiente, laborum quod distinctio? Exercitationem voluptatum laudantium laboriosam numquam facere adipisci amet? Eaque qui fugit sapiente beatae eligendi consequuntur. Quis at, eius repudiandae iste nam quas qui magni illo dicta maxime fuga, pariatur voluptatibus ducimus placeat consequuntur? Nulla ut officia ratione asperiores amet possimus nam qui dignissimos accusamus sunt, obcaecati architecto natus harum libero explicabo enim rem eveniet maxime unde. Earum officiis cupiditate ab similique ipsum soluta facilis hic odit reiciendis recusandae, impedit debitis velit.</p>
+        </div>
+        
+   
+</fieldset>
+</body>
+</html>

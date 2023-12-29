@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        #div1
+        {
+            border: 1px solid black;
+            padding: 15px;
+            background-color: rgb(219, 213, 240);
+            border-radius: 3px;
+            margin: 5px;
+        }
+        .inline1
+        {
+            /* display: block; */
+            display: inline;
+            /* border: 1px solid red ; */
+            padding: 10px;
+            margin: 5px;
+        }
+        .inline2
+        {
+            display: inline;
+            /* border: 1px solid red ; */
+            padding: 10px;
+            margin: 5px;
+        }
+        h1
+        {
+            text-align: center;
+            text-decoration-line: underline;
+            text-decoration-color: chartreuse;
+            font-family: cursive;
+            letter-spacing: 2px;
+            font-weight: bolder;
+        }
+        #div2
+        {
+            border: 1px solid black;
+            padding: 15px;
+            background-color: rgb(225, 231, 189);
+            border-radius: 3px;
+            margin: 5px;
+        }
+        .block1
+        {
+            display: block;
+            border: 1px solid red ;
+            padding: 10px;
+            margin: 5px;
+        }
+        .block2
+        {
+            display: block;
+            border: 1px solid red ;
+            padding: 10px;
+            margin: 5px;
+        }
+        .maindiv
+        {
+            border: 2px solid green;
+            padding: 10px;
+            margin-top: 10px;
+            height: 200px;
+            width: 560px;
+            text-align: center;
+            background-color: rgb(194, 194, 230);
+            margin-left: 300px;
+        }
+        .inblk
+        {
+            border: 1px solid black;
+            display: inline-block;
+            height: 100px;
+            width: 90px;
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(222, 191, 211);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Inline Example
+    </h1>
+    <div id="div1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, saepe! Repudiandae voluptatum consequatur odit voluptatibus itaque, aliquam consectetur mollitia saepe?
+        <span class="inline1">SPAN1 -Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, molestias.</span>
+        <span class="inline2">SPAN2-Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, molestias.</span>
+    </div>
+    <div>
+    <h1>
+        Block Example
+    </h1>
+    <div id="div2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, saepe! Repudiandae voluptatum consequatur odit voluptatibus itaque, aliquam consectetur mollitia saepe?
+        <span class="block1">SPAN1 -Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, molestias.</span>
+        <span class="block2">SPAN2-Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, molestias.</span>
+    </div>
+    <h1>
+       Inline-Block Example
+    </h1>
+        <div class="maindiv">
+           <div class="inblk">Inline-Block Element-1</div>
+            <div class="inblk">Inline-Block Element-2</div>
+            <div class="inblk">Inline-Block Element-3</div> 
+        </div>
+</body>
+</html>

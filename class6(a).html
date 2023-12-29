@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+    img
+    {
+        z-index: -1;
+        position: absolute;
+        margin-top: 15px;
+    }
+    p
+    {
+        color: white;
+        
+    }
+    .inline-blk1
+    {
+        border: 3px solid blue;
+        background-color: rgb(212, 233, 148);
+        width: 500px;
+        height: 120px;
+        padding: 10px;
+        position: relative;
+        z-index: 1;
+    }
+    .inline-blk2
+    {
+        border: 3px solid rgb(189, 14, 113);
+        background-color: rgb(61, 227, 102);
+        width: 300px;
+        height: 100px;
+        padding: 10px;
+        position: absolute;
+        top: 150px;
+        z-index: 3;
+        left: 20px;
+       
+    }
+    .inline-blk3
+    {
+        border: 3px solid rgb(141, 10, 235);
+        background-color: rgb(217, 142, 218);
+        width: 200px;
+        height: 80px;
+        padding: 10px;
+        position: absolute;
+        top: 160px;
+        left: 240px;
+        z-index: 2;
+    }
+    </style>
+</head>
+<body>
+    <h2>
+        Z-index Example
+    </h2>
+    <div class="inline-blk1">Inline with positioning and display property</div>
+    <div class="inline-blk2">Inline with positioning and display property</div>
+    <div class="inline-blk3">Inline with positioning and display property</div>
+    <img src="https://images.pexels.com/photos/2695679/pexels-photo-2695679.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quas.</p>
+</body>
+</html>

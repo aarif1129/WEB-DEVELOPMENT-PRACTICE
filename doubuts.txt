@@ -1,0 +1,17 @@
+table width
+<input type="date" name="" id=""> NAME? ID?
+whetehr we should write input type fisrt or label first
+absolute,relative and z-index
+13 june
+flex 
+align items-for single row over the cross axis
+align content-for multiple row ...
+justify content-works on main axis
+explination and difference
+when i give width to the main container,then flex-wrap:wrap does not works why?
+it does not adjust the order divs according to the width of display
+
+when i use position property it does not apply for it
+
+
+when i want to give height to grid elements there exists gap
